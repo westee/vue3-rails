@@ -2,17 +2,19 @@
     <div class="home">
         <Topnav></Topnav>
         <div class="content">
-            <aside>边栏</aside>
-            <main>内容</main>
+            <Aside></Aside>
+            <Main></Main>
         </div>
     </div>
 </template>
 
 <script>
+    import Aside from "../components/Doc/Aside.vue"
+    import Main from "../components/Doc/Main.vue"
     import Topnav from "../components/Topnav.vue";
     export default {
         name: "Home.vue",
-        components: {Topnav}
+        components: {Topnav,Aside,Main}
     }
 </script>
 
@@ -22,22 +24,11 @@
         flex-direction: column;
         height: 100vh;
 
-        .top-nav {
-            background: pink;
-        }
-
         .content {
             display: flex;
+            max-width: 1000px;
+            width: 100%;
             flex-grow: 1;
-            aside {
-                width: 200px;
-                background: lightblue;
-            }
-
-            main {
-                flex-grow: 1;
-                background: lightgreen;
-            }
         }
     }
 

@@ -1,6 +1,6 @@
 <template>
     <div class="top-nav">
-        <div class="logo">Darkness</div>
+        <div class="logo"><router-link to="/">Darkness</router-link> </div>
         <ul class="menu">
             <li>文档</li>
             <li>捐款</li>

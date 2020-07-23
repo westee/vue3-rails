@@ -14,6 +14,7 @@
 
 <script>
     import Topnav from "../components/Topnav.vue";
+
     export default {
         name: "Home.vue",
         components: {Topnav}
@@ -26,7 +27,7 @@
         flex-direction: column;
         height: 100vh;
 
-        .intro{
+        .intro {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -34,19 +35,6 @@
             padding: 100px 0;
         }
 
-        .content {
-            display: flex;
-            flex-grow: 1;
-            aside {
-                width: 200px;
-                background: lightblue;
-            }
-
-            main {
-                flex-grow: 1;
-                background: lightgreen;
-            }
-        }
     }
 
 </style>
