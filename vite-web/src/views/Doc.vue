@@ -1,20 +1,18 @@
 <template>
     <div class="home">
-        <div class="top-nav">top nav</div>
-        <div class="banner">
-            <h1>Darkness UI</h1>
-            <h2>基于Vue3 和 TypeScript 的 UI 框架</h2>
-            <div class="links">
-                <router-link to="/doc">查看文档</router-link>
-                <a href="github.com">GitHub</a>
-            </div>
+        <Topnav></Topnav>
+        <div class="content">
+            <aside>边栏</aside>
+            <main>内容</main>
         </div>
     </div>
 </template>
 
 <script>
+    import Topnav from "../components/Topnav.vue";
     export default {
-        name: "Home.vue"
+        name: "Home.vue",
+        components: {Topnav}
     }
 </script>
 

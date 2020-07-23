@@ -4,9 +4,9 @@ import './index.css'
 
 import {createRouter, createWebHistory} from 'vue-router'
 
-import Home from './components/Home.vue'
-import Count from './components/Count.vue'
-import Doc from './components/Doc.vue'
+import Home from './views/Home.vue'
+import Count from './views/Count.vue'
+import Doc from './views/Doc.vue'
 
 let router = createRouter({
     history: createWebHistory(),
