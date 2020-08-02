@@ -1,6 +1,6 @@
 <template>
     <div class="top-nav">
-        <div class="logo"><router-link to="/">Darkness</router-link> </div>
+        <div class="logo" @click="toggleMenu">Darkness</div>
         <ul class="menu">
             <li>文档</li>
             <li>捐款</li>
@@ -8,9 +8,19 @@
     </div>
 </template>
 
-<script>
+<script lang="ts">
+import { inject , Ref} from 'vue'
     export default {
-        name: "Topnav.vue"
+        name: "Topnav.vue",
+        setup(){
+            const asideVisible = inject<Ref<boolean>>('menuVisible');
+            const toggleMenu = () => {
+                asideVisible.value = !asideVisible.value
+                console.log(asideVisible.value)
+            }
+
+            return {toggleMenu}
+        }
     }
 </script>
 
@@ -21,6 +31,9 @@
         justify-content: space-between;
         padding: 16px 0;
         background: pink;
+        position: relative;
+        z-index: 10;
+
         .logo{
             max-width: 6em;
         }

@@ -1,35 +1,56 @@
+  
 <template>
-    <div class="home">
-        <Topnav></Topnav>
-        <div class="content">
-            <Aside></Aside>
-            <Main></Main>
-        </div>
+  <div>
+    <Topnav />
+    <div class="content">
+      <aside v-if="menuVisible">
+        <h2>组件列表</h2>
+        <ol>
+          <li>
+            <router-link to="/doc/swich">Switch 组件</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/button">Button 组件</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/dialog">Dialog 组件</router-link>
+          </li>
+          <li>
+            <router-link to="/doc/tabs">Tabs 组件</router-link>
+          </li>
+        </ol>
+      </aside>
+      <main>主内容</main>
     </div>
+  </div>
 </template>
-
-<script>
-    import Aside from "../components/Doc/Aside.vue"
-    import Main from "../components/Doc/Main.vue"
-    import Topnav from "../components/Topnav.vue";
-    export default {
-        name: "Home.vue",
-        components: {Topnav,Aside,Main}
-    }
+<script lang="ts">
+import Topnav from "../components/Topnav.vue";
+import { inject, Ref } from 'vue';
+export default {
+  components: { Topnav },
+  setup(){
+     const menuVisible = inject<Ref<boolean>>('menuVisible') // get
+    return {menuVisible}
+  }
+};
 </script>
-
 <style lang="scss" scoped>
-    .home {
-        display: flex;
-        flex-direction: column;
-        height: 100vh;
-
-        .content {
-            display: flex;
-            max-width: 1000px;
-            width: 100%;
-            flex-grow: 1;
-        }
+aside {
+  background: lightblue;
+  width: 150px;
+  padding: 16px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding-top: 70px;
+  > h2 {
+    margin-bottom: 4px;
+  }
+  > ol {
+    > li {
+      padding: 4px 0;
     }
-
+  }
+}
 </style>
