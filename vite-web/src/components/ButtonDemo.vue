@@ -2,7 +2,10 @@
     <div>Button</div>
     <div>示例1</div>
     <div>
-        <Button @click="xxx" @focus="xxx" @mouseover="xxx" size="small">按钮</Button>
+        <Button  @click="xxx" @focus="xxx" @mouseover="xxx" size="small">按钮</Button>
+        <Button theme="button" @click="xxx" @focus="xxx" @mouseover="xxx" size="small">按钮</Button>
+        <Button theme="text" @click="xxx" @focus="xxx" @mouseover="xxx" size="small">按钮</Button>
+        <Button theme="link" @click="xxx" @focus="xxx" @mouseover="xxx" size="small">按钮</Button>
     </div>
 </template>
 
