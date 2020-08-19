@@ -1,5 +1,5 @@
 <template>
-  <button :class="{checked: value}" @click="toggleChecked">
+  <button class="east-switch" :class="{'east-checked': value}" @click="toggleChecked">
     <span></span>
   </button>
 </template>
@@ -24,22 +24,19 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 $h: 22px;
 $h2: $h - 4px;
 $my-blue: #0092ff;
 $my-grey: #aaa;
 
-button {
+.east-switch {
   height: $h;
   width: $h * 2;
   border: none;
   background: $my-grey;
   border-radius: $h/2;
   position: relative;
-  &:focus {
-    outline: none;
-  }
 
   span {
     position: absolute;
@@ -52,11 +49,21 @@ button {
     transition: left 0.3s;
   }
 
-  &.checked {
+  &.east-checked {
     background: $my-blue;
     span {
       left: calc(100% - #{$h2} - 2px);
     }
+  }
+
+  &:focus { outline: none; }
+
+  &:active {
+    > span { width: $h2 + 4px; }
+  }
+
+  &.east-checked:active {
+    > span { width: $h2 + 4px; margin-left: -4px; }
   }
 }
 </style>
