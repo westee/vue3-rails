@@ -1,24 +1,28 @@
 <template>
     <template v-if="visible">
-
-    <div class="east-dialog-wrapper">
-        <div class="east-dialog">
-            <header>标题</header>
-            <main>
-                <p>p1</p>
-                <p>p2</p>
-            </main>
-            <footer>
-                <Button></Button>
-            </footer>
+        <div class="east-dialog-overlay" @click="onClickOverlay"></div>
+        <div class="east-dialog-wrapper">
+            <div class="east-dialog">
+                <header>标题
+                    <span @click="close" class="east-dialog-close"></span>
+                </header>
+                <main>
+                    <p>p1</p>
+                    <p>p2</p>
+                </main>
+                <footer>
+                    <Button level="main" @click="ok">OK</Button>
+                    <Button @click="cancel">Cancel</Button>
+                </footer>
+            </div>
         </div>
-    </div>
     </template>
 
 </template>
 
 <script lang="ts">
     import Button from '../lib/Button.vue'
+
     export default {
         components: {
             Button
@@ -27,10 +31,39 @@
             visible: {
                 type: Boolean,
                 default: false
+            },
+            closeOnClickOverlay: {
+                type: Boolean,
+                default: true
+            },
+            ok: {
+                type: Function
+            },
+            cancel: {
+                type: Function
             }
         },
-        setup(props){
-            console.log()
+        setup(props, context) {
+            const close = () => {
+                context.emit('update:visible', false)
+            };
+            const onClickOverlay = () => {
+                if (props.closeOnClickOverlay) {
+                    close();
+                }
+            };
+            const ok = () => {
+                if (props.ok?.() !== false) {
+                    close()
+                }
+            };
+
+            const cancel = () => {
+                props.cancel?.();
+                // context.emit("cancel");
+                close()
+            };
+            return {close, onClickOverlay, ok, cancel};
         }
     }
 </script>
@@ -44,6 +77,7 @@
         box-shadow: 0 0 3px fade_out(black, 0.5);
         min-width: 15em;
         max-width: 90%;
+
         &-overlay {
             position: fixed;
             top: 0;
@@ -53,6 +87,7 @@
             background: fade_out(black, 0.5);
             z-index: 10;
         }
+
         &-wrapper {
             position: fixed;
             left: 50%;
@@ -60,7 +95,8 @@
             transform: translate(-50%, -50%);
             z-index: 11;
         }
-        >header {
+
+        > header {
             padding: 12px 16px;
             border-bottom: 1px solid $border-color;
             display: flex;
@@ -68,20 +104,24 @@
             justify-content: space-between;
             font-size: 20px;
         }
-        >main {
+
+        > main {
             padding: 12px 16px;
         }
-        >footer {
+
+        > footer {
             border-top: 1px solid $border-color;
             padding: 12px 16px;
             text-align: right;
         }
+
         &-close {
             position: relative;
             display: inline-block;
             width: 16px;
             height: 16px;
             cursor: pointer;
+
             &::before,
             &::after {
                 content: '';
@@ -92,9 +132,11 @@
                 top: 50%;
                 left: 50%;
             }
+
             &::before {
                 transform: translate(-50%, -50%) rotate(-45deg);
             }
+
             &::after {
                 transform: translate(-50%, -50%) rotate(45deg);
             }

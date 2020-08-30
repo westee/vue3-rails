@@ -1,8 +1,8 @@
 <template>
     <div>Dialog 示例</div>
     <h1>示例1</h1>
-    <Button @click="toggle">toggle</Button>
-    <Dialog :visible="x"></Dialog>
+    <Button @click="toggle">toggle {{x}}</Button>
+    <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="ok" :cancel="cancel"></Dialog>
 </template>
 
 <script lang="ts">
@@ -17,10 +17,18 @@
         setup() {
             const x = ref(false);
             const toggle = () => {
-                console.log(12)
                 x.value = !x.value
             };
-            return {toggle}
+
+            const ok = ()=>{
+                console.log('ok');
+                return false
+            };
+
+            const cancel = ()=>{
+                console.log('cancel');
+            };
+            return {x, ok, cancel, toggle}
         }
     }
 </script>
