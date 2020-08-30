@@ -6,14 +6,15 @@
 </template>
 
 <script lang="ts">
-import Dialog from '../lib/Dialog.vue'
-import {ref} from 'vue'
-import Button from "../lib/Button.vue";
+    import Dialog from '../lib/Dialog.vue'
+    import {ref} from 'vue'
+    import Button from "../lib/Button.vue";
+
     export default {
-        components:{
-            Dialog,Button
+        components: {
+            Dialog, Button
         },
-        setup(){
+        setup() {
             const x = ref(false);
             const toggle = () => {
                 console.log(12)

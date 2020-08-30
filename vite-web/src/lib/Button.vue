@@ -10,7 +10,7 @@
 
     export default {
         name: "Button",
-        inheritAttrs: false,
+        // inheritAttrs: false, // 是否继承属性
         props: {
             theme: {
                 type: String,
@@ -116,6 +116,10 @@
             font-size: 24px;
             height: 48px;
             padding: 0 16px;
+        }
+
+        &.east-size-normal{
+            padding: 0 10px;
         }
 
         &.east-size-small {

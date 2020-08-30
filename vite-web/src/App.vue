@@ -12,7 +12,6 @@ export default {
   setup() {
     const width = document.documentElement.clientWidth;
     const menuVisible = ref(width <= 500 ? false : true);
-    console.log(menuVisible.value);
     provide("menuVisible", menuVisible);
 
     router.afterEach(() => {

@@ -29,8 +29,8 @@
                 default: false
             }
         },
-        setup(){
-            console.log(this.visible)
+        setup(props){
+            console.log()
         }
     }
 </script>
