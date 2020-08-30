@@ -39,7 +39,7 @@
                 return {
                     [`east-theme-${theme}`]: theme,
                     [`east-size-${size}`]: size,
-                    [`east-size-${level}`]: level,
+                    [`east-level-${level}`]: level,
 
                 }
             });
@@ -167,7 +167,9 @@
 
         &.east-theme-text {
             &.east-level-main {
-                color: $blue;
+                color: #fff;
+                background: $blue;
+                border-color: $blue;
 
                 &:hover,
                 &:focus {
