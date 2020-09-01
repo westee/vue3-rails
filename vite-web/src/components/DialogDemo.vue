@@ -2,7 +2,10 @@
     <div>Dialog 示例</div>
     <h1>示例1</h1>
     <Button @click="toggle">toggle {{x}}</Button>
-    <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="ok" :cancel="cancel"></Dialog>
+    <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="ok" :cancel="cancel" >
+        <div>line1</div>
+        <div>line2</div>
+    </Dialog>
 </template>
 
 <script lang="ts">

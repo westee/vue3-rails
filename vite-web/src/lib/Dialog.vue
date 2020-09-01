@@ -3,12 +3,11 @@
         <div class="east-dialog-overlay" @click="onClickOverlay"></div>
         <div class="east-dialog-wrapper">
             <div class="east-dialog">
-                <header>标题
+                <header>{{title}}
                     <span @click="close" class="east-dialog-close"></span>
                 </header>
                 <main>
-                    <p>p1</p>
-                    <p>p2</p>
+                    <slot/>
                 </main>
                 <footer>
                     <Button level="main" @click="ok">OK</Button>
@@ -28,6 +27,10 @@
             Button
         },
         props: {
+            title: {
+                type: String,
+                default: '提示'
+            },
             visible: {
                 type: Boolean,
                 default: false
