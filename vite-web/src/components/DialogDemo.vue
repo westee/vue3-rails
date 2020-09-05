@@ -3,8 +3,13 @@
     <h1>示例1</h1>
     <Button @click="toggle">toggle {{x}}</Button>
     <Dialog v-model:visible="x" :closeOnClickOverlay="false" :ok="ok" :cancel="cancel" >
-        <div>line1</div>
-        <div>line2</div>
+        <template v-slot:title>
+            <h3>提示1</h3>
+        </template>
+       <template v-slot:content>
+           <div>line1</div>
+           <div>line2</div>
+       </template>
     </Dialog>
 </template>
 

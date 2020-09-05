@@ -3,11 +3,12 @@
         <div class="east-dialog-overlay" @click="onClickOverlay"></div>
         <div class="east-dialog-wrapper">
             <div class="east-dialog">
-                <header>{{title}}
+                <header>
+                    <slot name="title"></slot>
                     <span @click="close" class="east-dialog-close"></span>
                 </header>
                 <main>
-                    <slot/>
+                    <slot name="content"/>
                 </main>
                 <footer>
                     <Button level="main" @click="ok">OK</Button>
