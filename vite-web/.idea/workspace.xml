@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lib/openDialog.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TabsDemo.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/Tab.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/lib/Tabs.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/DialogDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DialogDemo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Dialog.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Dialog.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +65,8 @@
       <workItem from="1597761124098" duration="1034000" />
       <workItem from="1597846297458" duration="7525000" />
       <workItem from="1598626611037" duration="6682000" />
-      <workItem from="1599315868868" duration="3193000" />
+      <workItem from="1599315868868" duration="3302000" />
+      <workItem from="1599399248605" duration="263000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
