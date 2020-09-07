@@ -1,7 +1,8 @@
+import './lib/east.scss'
+import './index.scss'
 import {createApp} from 'vue'
 import App from "./App.vue";
-import './index.scss'
-import './lib/east.scss'
+
 import {router} from './router'
 
 

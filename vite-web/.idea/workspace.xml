@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Tab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Tab.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lib/Tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Tabs.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,7 +65,7 @@
       <workItem from="1598626611037" duration="6682000" />
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
-      <workItem from="1599487161760" duration="2622000" />
+      <workItem from="1599487161760" duration="2755000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -187,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599400576218</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="渲染嵌套的插槽">
+      <created>1599489857810</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1599489857810</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -211,17 +217,18 @@
     <MESSAGE value="让Dialog支持title和content" />
     <MESSAGE value="创建 Tabs 和 Tab 组件" />
     <MESSAGE value="Tabs检查子组件的类型" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tabs检查子组件的类型" />
+    <MESSAGE value="渲染嵌套的插槽" />
+    <option name="LAST_COMMIT_MESSAGE" value="渲染嵌套的插槽" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1596289496512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1596289496512" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599400575571">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599489856877">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599400575571" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599489856877" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -230,10 +237,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596372511359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599400628000">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599489859119">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599400628000" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599489859119" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1597927882286">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
