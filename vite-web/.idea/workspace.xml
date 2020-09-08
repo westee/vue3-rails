@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/TabsDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TabsDemo.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lib/Tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Tabs.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +66,7 @@
       <workItem from="1598626611037" duration="6682000" />
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
-      <workItem from="1599487161760" duration="2755000" />
+      <workItem from="1599487161760" duration="3765000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -193,7 +194,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599489857810</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="调整main.ts样式引入顺序">
+      <created>1599489987398</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1599489987398</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -218,17 +226,18 @@
     <MESSAGE value="创建 Tabs 和 Tab 组件" />
     <MESSAGE value="Tabs检查子组件的类型" />
     <MESSAGE value="渲染嵌套的插槽" />
-    <option name="LAST_COMMIT_MESSAGE" value="渲染嵌套的插槽" />
+    <MESSAGE value="调整main.ts样式引入顺序" />
+    <option name="LAST_COMMIT_MESSAGE" value="调整main.ts样式引入顺序" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1596289496512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1596289496512" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599489856877">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599489986769">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599489856877" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599489986769" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
