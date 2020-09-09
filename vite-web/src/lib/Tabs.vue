@@ -1,13 +1,17 @@
 <template>
     <div class="east-tabs">
         <div class="east-tabs-nav">
-            <div class="east-tabs-nav-item" v-for="t in titles" :key="t"
+            <div class="east-tabs-nav-item" v-for="(t, index) in titles" :key="t"
                  :class="{selected: t=== selected}" @click="selectTab(t)"
-            >{{t}}</div>
+                 :ref="el => {if(el) navArr[index] = el}"
+            >{{t}}
+            </div>
+
+            <div class="east-tabs-nav-indicator" ref="indicator"></div>
         </div>
         <div class="east-tabs-content">
             <component v-for="(item, index) in defaults" :is="item" :key="index" class="east-tabs-content-item"
-                :class="{selected: item.props.title === selected}"
+                       :class="{selected: item.props.title === selected}"
             />
         </div>
     </div>
@@ -15,14 +19,28 @@
 
 <script lang="ts">
     import Tab from '../lib/Tab.vue';
+    import {ref, onMounted} from 'vue';
 
     export default {
-        props:{
-          selected: {
-              type: String
-          }
+        props: {
+            selected: {
+                type: String
+            }
         },
         setup(props, context) {
+            const navArr = ref<HTMLDivElement[]>([]);
+            const indicator = ref<HTMLDivElement>(null);
+
+            onMounted(()=>{
+                const navEls = [...navArr.value];
+                const selectedNav = navEls.filter(div => div.classList.contains('selected'))[0];
+                const {width,left} = selectedNav.getBoundingClientRect();
+                console.log(left)
+                indicator.value.style.width = width + 'px';
+                indicator.value.style.left = left + 'px';
+
+            });
+
             const defaults = context.slots.default();
             defaults.forEach(tag => {
                 {
@@ -42,7 +60,7 @@
                 console.log(title)
                 context.emit('update:selected', title)
             };
-            return {defaults, titles, selectTab}
+            return {defaults, titles, selectTab, navArr, indicator}
         }
     }
 </script>
@@ -57,17 +75,21 @@
             color: $color;
             border-bottom: 1px solid $border-color;
             position: relative;
+
             &-item {
                 padding: 8px 0;
                 margin: 0 16px;
                 cursor: pointer;
+
                 &:first-child {
                     margin-left: 0;
                 }
+
                 &.selected {
                     color: $blue;
                 }
             }
+
             &-indicator {
                 position: absolute;
                 height: 3px;
@@ -78,6 +100,7 @@
                 transition: all 250ms;
             }
         }
+
         &-content {
             padding: 8px 0;
         }

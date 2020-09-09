@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="显示被选中的导航">
+    <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/TabsDemo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/TabsDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lib/Tabs.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/lib/Tabs.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -66,7 +65,7 @@
       <workItem from="1598626611037" duration="6682000" />
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
-      <workItem from="1599487161760" duration="5782000" />
+      <workItem from="1599487161760" duration="7831000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -208,7 +207,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599573622986</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="完成tab title的切换">
+      <created>1599653995439</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1599653995439</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,17 +241,18 @@
     <MESSAGE value="渲染嵌套的插槽" />
     <MESSAGE value="调整main.ts样式引入顺序" />
     <MESSAGE value="显示被选中的导航" />
-    <option name="LAST_COMMIT_MESSAGE" value="显示被选中的导航" />
+    <MESSAGE value="完成tab title的切换" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成tab title的切换" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1596289496512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1596289496512" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599574988858">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599653994687">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599574988858" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599653994687" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -262,9 +269,9 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1597927882286" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1596372480624">
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599654036974">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1596372480624" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599654036974" />
   </component>
 </project>
