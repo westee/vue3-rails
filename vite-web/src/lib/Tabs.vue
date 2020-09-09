@@ -2,11 +2,13 @@
     <div class="east-tabs">
         <div class="east-tabs-nav">
             <div class="east-tabs-nav-item" v-for="t in titles" :key="t"
-                 :class="{selected: t=== selected}"
+                 :class="{selected: t=== selected}" @click="selectTab(t)"
             >{{t}}</div>
         </div>
         <div class="east-tabs-content">
-            <component v-for="(item, index) in defaults" :is="item" :key="index" class="east-tabs-content-item" />
+            <component v-for="(item, index) in defaults" :is="item" :key="index" class="east-tabs-content-item"
+                :class="{selected: item.props.title === selected}"
+            />
         </div>
     </div>
 </template>
@@ -21,7 +23,7 @@
           }
         },
         setup(props, context) {
-            const defaults = context.slots.default()
+            const defaults = context.slots.default();
             defaults.forEach(tag => {
                 {
                     if (tag.type.__hmrId !== Tab.__hmrId) {
@@ -35,7 +37,12 @@
             const titles = defaults.map(tag => {
                 return tag.props.title
             });
-            return {defaults, titles}
+
+            const selectTab = (title: string) => {
+                console.log(title)
+                context.emit('update:selected', title)
+            };
+            return {defaults, titles, selectTab}
         }
     }
 </script>
