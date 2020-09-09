@@ -1,6 +1,6 @@
 <template>
     <div class="east-tabs">
-        <div class="east-tabs-nav">
+        <div class="east-tabs-nav" ref="container">
             <div class="east-tabs-nav-item" v-for="(t, index) in titles" :key="t"
                  :class="{selected: t=== selected}" @click="selectTab(t)"
                  :ref="el => {if(el) navArr[index] = el}"
@@ -19,7 +19,7 @@
 
 <script lang="ts">
     import Tab from '../lib/Tab.vue';
-    import {ref, onMounted} from 'vue';
+    import {ref, onMounted, onUpdated} from 'vue';
 
     export default {
         props: {
@@ -30,17 +30,26 @@
         setup(props, context) {
             const navArr = ref<HTMLDivElement[]>([]);
             const indicator = ref<HTMLDivElement>(null);
+            const container = ref<HTMLDivElement>(null);
 
-            onMounted(()=>{
+            const x = ()=>{
                 const navEls = [...navArr.value];
                 const selectedNav = navEls.filter(div => div.classList.contains('selected'))[0];
-                const {width,left} = selectedNav.getBoundingClientRect();
-                console.log(left)
+                const {width} = selectedNav.getBoundingClientRect();
                 indicator.value.style.width = width + 'px';
-                indicator.value.style.left = left + 'px';
+                const {
+                    left: left1
+                } = container.value.getBoundingClientRect();
+                const {
+                    left: left2
+                } = selectedNav.getBoundingClientRect();
 
-            });
+                const left = left2 - left1
+                indicator.value.style.left = left + 'px'
+            };
 
+            onMounted(x);
+            onUpdated(x);
             const defaults = context.slots.default();
             defaults.forEach(tag => {
                 {
@@ -60,7 +69,7 @@
                 console.log(title)
                 context.emit('update:selected', title)
             };
-            return {defaults, titles, selectTab, navArr, indicator}
+            return {defaults, titles, selectTab, navArr, indicator, container}
         }
     }
 </script>
