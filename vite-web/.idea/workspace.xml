@@ -65,7 +65,7 @@
       <workItem from="1598626611037" duration="6682000" />
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
-      <workItem from="1599487161760" duration="9701000" />
+      <workItem from="1599487161760" duration="9923000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -228,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599657327482</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="优化代码">
+      <created>1599658142715</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1599658142715</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,17 +266,18 @@
     <MESSAGE value="动态设置 div 的宽度" />
     <MESSAGE value="动态设置 indicator 的宽度" />
     <MESSAGE value="动态设置 indicator 的位置" />
-    <option name="LAST_COMMIT_MESSAGE" value="动态设置 indicator 的位置" />
+    <MESSAGE value="优化代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="优化代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1599657955516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1599657955516" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599658126063">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599658142026">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599658126063" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599658142026" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -278,10 +286,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596372511359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599489859119">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599658144183">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599489859119" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599658144183" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1597927882286">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

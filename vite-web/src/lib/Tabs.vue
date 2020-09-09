@@ -19,7 +19,7 @@
 
 <script lang="ts">
     import Tab from '../lib/Tab.vue';
-    import {ref, watchEffect} from 'vue';
+    import {ref,onMounted, watchEffect} from 'vue';
 
     export default {
         props: {
@@ -46,7 +46,9 @@
                 indicator.value.style.left = left + 'px'
             };
 
-            watchEffect(x);
+            onMounted(()=> {
+                watchEffect(x);
+            });
 
             const defaults = context.slots.default();
             defaults.forEach(tag => {
