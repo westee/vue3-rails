@@ -3,7 +3,7 @@
         <div class="east-tabs-nav" ref="container">
             <div class="east-tabs-nav-item" v-for="(t, index) in titles" :key="t"
                  :class="{selected: t=== selected}" @click="selectTab(t)"
-                 :ref="el => {if(el) navArr[index] = el}"
+                 :ref="el => {if(t===selected) selectedNav = el}"
             >{{t}}
             </div>
 
@@ -19,7 +19,7 @@
 
 <script lang="ts">
     import Tab from '../lib/Tab.vue';
-    import {ref, onMounted, onUpdated} from 'vue';
+    import {ref, watchEffect} from 'vue';
 
     export default {
         props: {
@@ -28,37 +28,32 @@
             }
         },
         setup(props, context) {
-            const navArr = ref<HTMLDivElement[]>([]);
             const indicator = ref<HTMLDivElement>(null);
+            const selectedNav = ref<HTMLDivElement>(null);
             const container = ref<HTMLDivElement>(null);
 
             const x = ()=>{
-                const navEls = [...navArr.value];
-                const selectedNav = navEls.filter(div => div.classList.contains('selected'))[0];
-                const {width} = selectedNav.getBoundingClientRect();
+                const {width} = selectedNav.value.getBoundingClientRect();
                 indicator.value.style.width = width + 'px';
                 const {
                     left: left1
                 } = container.value.getBoundingClientRect();
                 const {
                     left: left2
-                } = selectedNav.getBoundingClientRect();
+                } = selectedNav.value.getBoundingClientRect();
 
-                const left = left2 - left1
+                const left = left2 - left1;
                 indicator.value.style.left = left + 'px'
             };
 
-            onMounted(x);
-            onUpdated(x);
+            watchEffect(x);
+
             const defaults = context.slots.default();
             defaults.forEach(tag => {
                 {
                     if (tag.type.__hmrId !== Tab.__hmrId) {
                         throw new Error("Tabs的子组件必须为 Tab。")
                     }
-                    // if (tag.type !== Tab.type) {
-                    //     throw new Error("Tabs的子组件必须为 Tab。")
-                    // }
                 }
             });
             const titles = defaults.map(tag => {
@@ -66,10 +61,9 @@
             });
 
             const selectTab = (title: string) => {
-                console.log(title)
                 context.emit('update:selected', title)
             };
-            return {defaults, titles, selectTab, navArr, indicator, container}
+            return {defaults, titles, selectTab,selectedNav, indicator, container}
         }
     }
 </script>
