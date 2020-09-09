@@ -10,16 +10,14 @@
             <div class="east-tabs-nav-indicator" ref="indicator"></div>
         </div>
         <div class="east-tabs-content">
-            <component v-for="(item, index) in defaults" :is="item" :key="index" class="east-tabs-content-item"
-                       :class="{selected: item.props.title === selected}"
-            />
+            <component :is="current" :key="current.props.title" class="east-tabs-content-item" />
         </div>
     </div>
 </template>
 
 <script lang="ts">
     import Tab from '../lib/Tab.vue';
-    import {ref,onMounted, watchEffect} from 'vue';
+    import {ref,onMounted, computed, watchEffect} from 'vue';
 
     export default {
         props: {
@@ -62,10 +60,14 @@
                 return tag.props.title
             });
 
+            const current = computed(() => {
+                return defaults.find(tag => tag.props.title === props.selected)
+            })
+
             const selectTab = (title: string) => {
                 context.emit('update:selected', title)
             };
-            return {defaults, titles, selectTab,selectedNav, indicator, container}
+            return {defaults, titles, selectTab,selectedNav, indicator, container ,current}
         }
     }
 </script>

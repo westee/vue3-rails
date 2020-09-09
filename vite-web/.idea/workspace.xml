@@ -65,7 +65,7 @@
       <workItem from="1598626611037" duration="6682000" />
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
-      <workItem from="1599487161760" duration="9923000" />
+      <workItem from="1599487161760" duration="10800000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -235,14 +235,20 @@
       <option name="project" value="LOCAL" />
       <updated>1599658142715</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="mounted中执行effect">
+      <created>1599658447417</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1599658447417</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="搭建官网骨架" />
     <MESSAGE value="搭建 Home.vue" />
     <MESSAGE value="搭建 Doc.vue" />
     <MESSAGE value="更新使用ts" />
@@ -267,17 +273,18 @@
     <MESSAGE value="动态设置 indicator 的宽度" />
     <MESSAGE value="动态设置 indicator 的位置" />
     <MESSAGE value="优化代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="优化代码" />
+    <MESSAGE value="mounted中执行effect" />
+    <option name="LAST_COMMIT_MESSAGE" value="mounted中执行effect" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1599657955516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1599657955516" />
-    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599658142026">
+    <state x="372" y="5" key="CommitChangelistDialog2" timestamp="1599658446729">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599658142026" />
+    <state x="372" y="5" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599658446729" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
