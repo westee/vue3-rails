@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Home.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Home.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
       <workItem from="1599487161760" duration="10800000" />
-      <workItem from="1599745264854" duration="2975000" />
+      <workItem from="1599745264854" duration="4315000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -251,14 +251,20 @@
       <option name="project" value="LOCAL" />
       <updated>1599835440664</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="给文字和链接添加样式">
+      <created>1599918394785</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1599918394785</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="搭建 Doc.vue" />
     <MESSAGE value="更新使用ts" />
     <MESSAGE value="创建Button组件" />
     <MESSAGE value="Vue 3 属性绑定细节" />
@@ -283,17 +289,18 @@
     <MESSAGE value="优化代码" />
     <MESSAGE value="mounted中执行effect" />
     <MESSAGE value="首页渐变背景" />
-    <option name="LAST_COMMIT_MESSAGE" value="首页渐变背景" />
+    <MESSAGE value="给文字和链接添加样式" />
+    <option name="LAST_COMMIT_MESSAGE" value="给文字和链接添加样式" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1599657955516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1599657955516" />
-    <state x="481" y="0" key="CommitChangelistDialog2" timestamp="1599835439740">
+    <state x="481" y="0" key="CommitChangelistDialog2" timestamp="1599918394085">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="481" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599835439740" />
+    <state x="481" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1599918394085" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
