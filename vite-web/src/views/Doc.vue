@@ -1,7 +1,7 @@
   
 <template>
   <div class="layout">
-    <Topnav class="nav" :toggle-menu-visible="true" />
+    <Topnav class="nav" :toggleMenuVisible="true" />
     <div class="content">
       <aside v-if="menuVisible">
         <h2>组件列表</h2>
@@ -62,7 +62,8 @@ export default {
   > main {
     flex-grow: 1;
     padding: 16px;
-    background: lightgreen;
+    background: #fff;
+    /*background: lightgreen;*/
   }
 }
 

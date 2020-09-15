@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7efa20c7-9a91-48f9-b82d-ab8549062543" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/components/DocDemo.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Topnav.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Topnav.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/router.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/views/Doc.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/Doc.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +69,7 @@
       <workItem from="1599315868868" duration="3302000" />
       <workItem from="1599399248605" duration="1419000" />
       <workItem from="1599487161760" duration="10800000" />
-      <workItem from="1599745264854" duration="6024000" />
+      <workItem from="1599745264854" duration="7872000" />
     </task>
     <task id="LOCAL-00001" summary="搭建官网骨架">
       <created>1595509299608</created>
@@ -266,14 +267,20 @@
       <option name="project" value="LOCAL" />
       <updated>1600005299372</updated>
     </task>
-    <option name="localTasksCounter" value="29" />
+    <task id="LOCAL-00029" summary="完善首页的各种细节">
+      <created>1600095008668</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1600095008668</updated>
+    </task>
+    <option name="localTasksCounter" value="30" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="创建Button组件" />
     <MESSAGE value="Vue 3 属性绑定细节" />
     <MESSAGE value="props vs attrs" />
     <MESSAGE value="Button 基础样式" />
@@ -298,17 +305,18 @@
     <MESSAGE value="首页渐变背景" />
     <MESSAGE value="给文字和链接添加样式" />
     <MESSAGE value="使用 iconfont.cn 添加 logo 和 icon" />
-    <option name="LAST_COMMIT_MESSAGE" value="使用 iconfont.cn 添加 logo 和 icon" />
+    <MESSAGE value="完善首页的各种细节" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善首页的各种细节" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="71" key="#Plugins" timestamp="1599657955516">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="71" key="#Plugins/0.0.1536.824@0.0.1536.824" timestamp="1599657955516" />
-    <state x="481" y="0" key="CommitChangelistDialog2" timestamp="1600005298386">
+    <state x="481" y="0" key="CommitChangelistDialog2" timestamp="1600095007823">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="481" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600005298386" />
+    <state x="481" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1600095007823" />
     <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598969049371">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -317,10 +325,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="54" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596372511359" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1599658144183">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1600095011197">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1599658144183" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1600095011197" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1597927882286">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
